@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>Name:</label><br>
+        <input type="text" name="fname" id="fname"><br><br>
+        <label>Tamil:</label><br>
+        <input type="number" name="tamil" id="tamil"><br><br>
+        <label>English:</label><br>
+        <input type="number" name="english" id="english"><br><br>
+        <label>Maths:</label><br>
+        <input type="number" name="maths" id="maths"><br><br>
+        <input type="button" value="Submit" onclick="myFunction()"><br>
+    </form>
+    <p>Name : <span id="lname"></span></p>
+    <p>Total : <span id="total"></span></p>
+    <p>Average : <span id="avg"></span></p>
+    <p>Grade : <span id="grd"></span></p>
+    <script>
+        function myFunction(){
+            let a = document.getElementById("fname").value;
+            let mark1 = document.getElementById("tamil").value;
+            let mark2 = document.getElementById("english").value;
+            let mark3 = document.getElementById("maths").value;
+            let ttl = parseInt(mark1)+parseInt(mark2)+parseInt(mark3);
+            let avrg = ttl/3;
+            document.getElementById("total").innerHTML = ttl;
+            document.getElementById("avg").innerHTML = avrg;
+            document.getElementById("lname").innerHTML = a;
+            if(avrg>=90)
+            {
+                document.getElementById("grd").innerHTML = "A+";
+            }
+            else if(avrg>=80)
+            {
+                document.getElementById("grd").innerHTML = "A";
+            }
+            else if(avrg>=70)
+            {
+                document.getElementById("grd").innerHTML = "B";
+            }
+            else if(avrg>=60)
+            {
+                document.getElementById("grd").innerHTML = "C";
+            }
+            else if(avrg>=50)
+            {
+                document.getElementById("grd").innerHTML = "D";
+            }
+            else
+            {
+                document.getElementById("grd").innerHTML = "Read Well";
+            }
+        }
+    </script>
+</body>
+</html>

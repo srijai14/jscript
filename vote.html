@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>Age:</label>
+        <input type="number" name="fname" id="fname"><br><br>
+        <input type="button" value="Submit" onclick="myFunction()">
+    </form>
+    <p id="numr"></p>
+
+    <script>
+        function myFunction(){
+        let age = document.getElementById("fname").value;
+        if(age >= 18){
+            document.getElementById("numr").innerHTML = "They can vote";
+        }
+        else{
+            document.getElementById("numr").innerHTML = "They cannot vote";
+        }
+        }
+    </script>
+</body>
+</html>

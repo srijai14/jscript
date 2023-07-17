@@ -1,0 +1,53 @@
+.section{
+    border-style: double;
+    height: 630px;
+}
+.nav,.body{
+    border-style: solid;
+    border-color: darkblue;
+    height: 200px;
+    width: 95%;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.body{
+    height: 390px;
+}
+.logo,.brand,.menu{
+    border-style: ridge;
+    border-color: cadetblue;
+    height: 170px;
+    width: 25%;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.brand{
+    width: 45%;
+}
+.menu{
+    float: left;
+    margin-right: 15px;
+   
+}
+.body1,.body2{
+    border-style: dotted;
+    border-color: indigo;
+    width: 45%;
+    height: 350px;
+    float: left;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+.body2{
+    float: right;
+    margin-right: 25px;
+}
+.title1,.title2,.title3{
+    border-style: dotted;
+    border-color: brown;
+    width: 90%;
+    height: 90px;
+    margin-left: 23px;
+    margin-top: 15px;
+}

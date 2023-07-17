@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            border-style: dashed double dotted solid;
+            background-image: url('img3.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: scroll;
+            border-radius: 10px;
+            outline-style: solid;
+        }
+        li{
+            list-style-type: none;
+            display: inline-block;
+            border-style: double;
+        }
+        a{
+            color: red;
+        }
+        @media only screen and (max-width: 1000px) {
+            a{
+                color: black;
+            }
+        }
+        @media only screen and (max-width: 600px) {
+            a{
+                color: green;
+            }
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+    <!-- head-->
+   <p style="background-color: #00ff00;">Browsers <q>normally insert quotation</q> marks around the quotation.</p>
+   <p style="background-color: DodgerBlue;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, earum necessitatibus, quod qui incidunt quisquam itaque aliquid culpa deleniti aut temporibus? Aut natus tenetur dolore suscipit reiciendis iusto modi rerum.</p>
+   <bdo dir="rtl">Browsers normally insert quotation</bdo><br>
+   <a href="https://www.w3schools.com/" target="_top">Visit W3Schools!</a>
+   <!-- <img src="img.jpeg" usemap="#table">
+   <map name="table">
+        <area shape="rect" coords="290,172,333,250" href="picture.html">
+   </map> -->
+   <picture>
+    <source media="(min-width: 650px)" srcset="img.jpeg">
+    <source media="(min-width: 465px)" srcset="img1.webp">
+    <img src="img2.webp" style="width:auto;">
+  </picture>
+  <dl>
+    <dt>website</dt>
+    <dd>Browsers normally insert quotation</dd>
+  </dl>
+  <!-- <iframe src="form.html" frameborder="2" width="1000px" height="500px" name="iframe_a"></iframe>
+  <p><a href="https://getbootstrap.com/" target="iframe_a">click me</a></p>
+  <p id="demo"></p>
+  <script>
+    document.getElementById("demo").innerHTML = "Javascript";
+  </script> -->
+</body>
+</html>

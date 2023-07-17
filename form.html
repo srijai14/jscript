@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form>
+        <label>FirstName:</label><br>
+        <input type="text" name="fname" id="fname"><br>
+        <label>LastName:</label><br>
+        <input type="text" name="lname" id="lname"><br>
+        <!-- <label>Password:</label><br>
+        <input type="password" name="password"><br>
+        <label>Conform Password:</label><br>
+        <input type="password" name="cpassword"><br>
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="male">
+        <label>Male</label><br>
+        <input type="radio" name="gender" value="female">
+        <label>Female</label><br>
+        <label>Hobbies:</label><br>
+        <input type="checkbox" name="hobby1" value="reading">
+        <label>Reading</label><br>
+        <input type="checkbox" name="hobby2" value="cooking">
+        <label>Cooking</label><br>
+        <input type="checkbox" name="hobby3" value="music">
+        <label>Music</label><br>
+        <label>Fav Movies:</label>
+        <select name="movies" id="movies">
+            <option value="asuran">Asuran</option>
+            <option value="maari">Maari</option>
+            <option value="don">Don</option>
+            <option value="vaarisu">Vaarisu</option>
+        </select><br>
+        <label>Address:</label><br>
+        <textarea name="address" rows="10" cols="30"></textarea><br>
+        <label>Phone:</label><br>
+        <input type="tel" name="phone" maxlength="10"><br>
+        <label>Email:</label><br>
+        <input type="email" name="email"><br><br>
+        <button type="submit">Submit</button>
+        <a href="index.html">Home</a> -->
+        <button type="button" onclick="myFunction()">Submit</button>
+        <!-- <input type="button" onclick="myFunction()" value="submit"> -->
+    </form>
+    <p id="demo"></p>
+    <script>
+        function myFunction(){
+            var a = document.getElementById("fname").value;
+            var b = document.getElementById("lname").value;
+            var c = a +''+ b;
+            document.getElementById("demo").innerHTML = a;
+            // window.alert(c);
+            // console.log(c);
+        }
+    </script>
+</body>
+</html>
